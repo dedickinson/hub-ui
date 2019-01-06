@@ -13,7 +13,7 @@ export class PositionDetails extends React.Component<Props> {
                     <li>Latitude: {position.coords.latitude}</li>
                     <li>Longitude: {position.coords.longitude}</li>
                     <li>Altitude: {position.coords.altitude}</li>
-                    <li>Accuracy: {position.coords.accuracy} m</li>
+                    <li>Accuracy: {position.coords.accuracy/1000} km</li>
                 </ul>
             );
         } else {
